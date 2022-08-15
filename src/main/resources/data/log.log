@@ -1,0 +1,221 @@
+2022-07-27 13:40:47  [ main:0 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[GetGroups])
+2022-07-27 13:40:47  [ main:16 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of failed kerberos logins and latency (milliseconds)])
+2022-07-27 13:40:47  [ main:22 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of successful kerberos logins and latency (milliseconds)])
+2022-07-27 13:40:47  [ main:22 ] - [ DEBUG ]  field private org.apache.hadoop.metrics2.lib.MutableGaugeInt org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailures with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since last successful login])
+2022-07-27 13:40:47  [ main:22 ] - [ DEBUG ]  field private org.apache.hadoop.metrics2.lib.MutableGaugeLong org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailuresTotal with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since startup])
+2022-07-27 13:40:47  [ main:27 ] - [ DEBUG ]  UgiMetrics, User and group related metrics
+2022-07-27 13:40:47  [ main:43 ] - [ DEBUG ]  Setting hadoop.security.token.service.use_ip to true
+2022-07-27 13:40:47  [ main:70 ] - [ DEBUG ]   Creating new Groups object
+2022-07-27 13:40:47  [ main:75 ] - [ DEBUG ]  Trying to load the custom-built native-hadoop library...
+2022-07-27 13:40:47  [ main:91 ] - [ DEBUG ]  Loaded the native-hadoop library
+2022-07-27 13:40:47  [ main:96 ] - [ DEBUG ]  Using JniBasedUnixGroupsMapping for Group resolution
+2022-07-27 13:40:47  [ main:96 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMapping
+2022-07-27 13:40:47  [ main:240 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+2022-07-27 13:40:47  [ main:266 ] - [ DEBUG ]  Hadoop login
+2022-07-27 13:40:47  [ main:266 ] - [ DEBUG ]  hadoop login commit
+2022-07-27 13:40:47  [ main:272 ] - [ DEBUG ]  Using user: "root" with name: root
+2022-07-27 13:40:47  [ main:277 ] - [ DEBUG ]  User entry: "root"
+2022-07-27 13:40:47  [ main:282 ] - [ DEBUG ]  UGI loginUser: root (auth:SIMPLE)
+2022-07-27 13:40:47  [ main:282 ] - [ DEBUG ]  Starting: Acquiring creator semaphore for hdfs://192.168.244.100:8020
+2022-07-27 13:40:47  [ main:288 ] - [ DEBUG ]  Acquiring creator semaphore for hdfs://192.168.244.100:8020: duration 0:00.006s
+2022-07-27 13:40:47  [ main:362 ] - [ DEBUG ]  sampler.classes = ; loaded no samplers
+2022-07-27 13:40:48  [ main:916 ] - [ DEBUG ]  span.receiver.classes = ; loaded no span receivers
+2022-07-27 13:40:48  [ main:916 ] - [ DEBUG ]  Starting: Creating FS hdfs://192.168.244.100:8020
+2022-07-27 13:40:48  [ main:916 ] - [ DEBUG ]  Loading filesystems
+2022-07-27 13:40:48  [ main:948 ] - [ DEBUG ]  file:// = class org.apache.hadoop.fs.LocalFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-common/3.3.1/hadoop-common-3.3.1.jar
+2022-07-27 13:40:48  [ main:964 ] - [ DEBUG ]  viewfs:// = class org.apache.hadoop.fs.viewfs.ViewFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-common/3.3.1/hadoop-common-3.3.1.jar
+2022-07-27 13:40:48  [ main:969 ] - [ DEBUG ]  har:// = class org.apache.hadoop.fs.HarFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-common/3.3.1/hadoop-common-3.3.1.jar
+2022-07-27 13:40:48  [ main:969 ] - [ DEBUG ]  http:// = class org.apache.hadoop.fs.http.HttpFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-common/3.3.1/hadoop-common-3.3.1.jar
+2022-07-27 13:40:48  [ main:969 ] - [ DEBUG ]  https:// = class org.apache.hadoop.fs.http.HttpsFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-common/3.3.1/hadoop-common-3.3.1.jar
+2022-07-27 13:40:48  [ main:991 ] - [ DEBUG ]  hdfs:// = class org.apache.hadoop.hdfs.DistributedFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-hdfs-client/3.3.1/hadoop-hdfs-client-3.3.1.jar
+2022-07-27 13:40:48  [ main:1012 ] - [ DEBUG ]  webhdfs:// = class org.apache.hadoop.hdfs.web.WebHdfsFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-hdfs-client/3.3.1/hadoop-hdfs-client-3.3.1.jar
+2022-07-27 13:40:48  [ main:1017 ] - [ DEBUG ]  swebhdfs:// = class org.apache.hadoop.hdfs.web.SWebHdfsFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-hdfs-client/3.3.1/hadoop-hdfs-client-3.3.1.jar
+2022-07-27 13:40:48  [ main:1017 ] - [ DEBUG ]  Looking for FS supporting hdfs
+2022-07-27 13:40:48  [ main:1017 ] - [ DEBUG ]  looking for configuration option fs.hdfs.impl
+2022-07-27 13:40:48  [ main:1055 ] - [ DEBUG ]  Looking in service filesystems for implementation class
+2022-07-27 13:40:48  [ main:1055 ] - [ DEBUG ]  FS for hdfs is class org.apache.hadoop.hdfs.DistributedFileSystem
+2022-07-27 13:40:48  [ main:1113 ] - [ DEBUG ]  dfs.client.use.legacy.blockreader.local = false
+2022-07-27 13:40:48  [ main:1113 ] - [ DEBUG ]  dfs.client.read.shortcircuit = false
+2022-07-27 13:40:48  [ main:1113 ] - [ DEBUG ]  dfs.client.domain.socket.data.traffic = false
+2022-07-27 13:40:48  [ main:1113 ] - [ DEBUG ]  dfs.domain.socket.path = 
+2022-07-27 13:40:48  [ main:1134 ] - [ DEBUG ]  Sets dfs.client.block.write.replace-datanode-on-failure.min-replication to 0
+2022-07-27 13:40:48  [ main:1153 ] - [ DEBUG ]  multipleLinearRandomRetry = null
+2022-07-27 13:40:48  [ main:1188 ] - [ DEBUG ]  rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine2$RpcProtobufRequest, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine2$Server$ProtoBufRpcInvoker@7219ec67
+2022-07-27 13:40:49  [ main:1858 ] - [ DEBUG ]  getting client out of cache: Client-2f74f1dd8dce4e798bde3cade136b78d
+2022-07-27 13:40:50  [ main:2677 ] - [ DEBUG ]  Both short-circuit local reads and UNIX domain socket are disabled.
+2022-07-27 13:40:50  [ main:2688 ] - [ DEBUG ]  DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for dfs.data.transfer.protection
+2022-07-27 13:40:50  [ main:2693 ] - [ DEBUG ]  Creating FS hdfs://192.168.244.100:8020: duration 0:01.777s
+2022-07-27 13:40:50  [ main:2699 ] - [ DEBUG ]  /root/data: masked={ masked: rwxr-xr-x, unmasked: rwxrwxrwx }
+2022-07-27 13:40:50  [ main:2781 ] - [ DEBUG ]  The ping interval is 60000 ms.
+2022-07-27 13:40:50  [ main:2784 ] - [ DEBUG ]  Connecting to /192.168.244.100:8020
+2022-07-27 13:40:50  [ main:2784 ] - [ DEBUG ]  Setup connection to /192.168.244.100:8020
+2022-07-27 13:40:50  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:2821 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root: starting, having connections 1
+2022-07-27 13:40:50  [ IPC Parameter Sending Thread #0:2821 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #0 org.apache.hadoop.hdfs.protocol.ClientProtocol.mkdirs
+2022-07-27 13:40:50  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3146 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #0
+2022-07-27 13:40:50  [ main:3146 ] - [ DEBUG ]  Call: mkdirs took 415ms
+2022-07-27 13:40:50  [ IPC Parameter Sending Thread #0:3156 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #1 org.apache.hadoop.hdfs.protocol.ClientProtocol.getFileInfo
+2022-07-27 13:40:50  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3162 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #1
+2022-07-27 13:40:50  [ main:3167 ] - [ DEBUG ]  Call: getFileInfo took 11ms
+2022-07-27 13:40:50  [ main:3172 ] - [ DEBUG ]  /root/data/student2.txt: masked={ masked: rw-r--r--, unmasked: rw-rw-rw- }
+2022-07-27 13:40:50  [ IPC Parameter Sending Thread #0:3225 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #2 org.apache.hadoop.hdfs.protocol.ClientProtocol.create
+2022-07-27 13:40:50  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3326 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #2
+2022-07-27 13:40:50  [ main:3326 ] - [ DEBUG ]  Call: create took 101ms
+2022-07-27 13:40:50  [ main:3352 ] - [ DEBUG ]  computePacketChunkSize: src=/root/data/student2.txt, chunkSize=516, chunksPerPacket=126, packetSize=65016
+2022-07-27 13:40:50  [ LeaseRenewer:root@192.168.244.100:8020:3370 ] - [ DEBUG ]  Lease renewer daemon for [DFSClient_NONMAPREDUCE_-1146632230_1] with renew id 1 started
+2022-07-27 13:40:50  [ IPC Parameter Sending Thread #0:3372 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #3 org.apache.hadoop.hdfs.protocol.ClientProtocol.getFileInfo
+2022-07-27 13:40:50  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3381 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #3
+2022-07-27 13:40:50  [ main:3381 ] - [ DEBUG ]  Call: getFileInfo took 10ms
+2022-07-27 13:40:50  [ main:3384 ] - [ DEBUG ]  Starting: Acquiring creator semaphore for file:///
+2022-07-27 13:40:50  [ main:3386 ] - [ DEBUG ]  Acquiring creator semaphore for file:///: duration 0:00.002s
+2022-07-27 13:40:50  [ main:3387 ] - [ DEBUG ]  Starting: Creating FS file:///
+2022-07-27 13:40:50  [ main:3387 ] - [ DEBUG ]  Looking for FS supporting file
+2022-07-27 13:40:50  [ main:3388 ] - [ DEBUG ]  looking for configuration option fs.file.impl
+2022-07-27 13:40:50  [ main:3388 ] - [ DEBUG ]  Looking in service filesystems for implementation class
+2022-07-27 13:40:50  [ main:3389 ] - [ DEBUG ]  FS for file is class org.apache.hadoop.fs.LocalFileSystem
+2022-07-27 13:40:50  [ main:3390 ] - [ DEBUG ]  Creating FS file:///: duration 0:00.002s
+2022-07-27 13:40:50  [ IPC Parameter Sending Thread #0:3406 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #4 org.apache.hadoop.hdfs.protocol.ClientProtocol.getFileInfo
+2022-07-27 13:40:50  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3406 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #4
+2022-07-27 13:40:50  [ main:3412 ] - [ DEBUG ]  Call: getFileInfo took 11ms
+2022-07-27 13:40:50  [ shutdown-hook-0:3417 ] - [ DEBUG ]  FileSystem.close() by method: org.apache.hadoop.fs.FilterFileSystem.close(FilterFileSystem.java:529)); Key: (root (auth:SIMPLE))@file://; URI: file:///; Object Identity Hash: 1b98f5a1
+2022-07-27 13:40:50  [ shutdown-hook-0:3423 ] - [ DEBUG ]  FileSystem.close() by method: org.apache.hadoop.fs.RawLocalFileSystem.close(RawLocalFileSystem.java:759)); Key: null; URI: file:///; Object Identity Hash: 155f08a2
+2022-07-27 13:40:50  [ shutdown-hook-0:3423 ] - [ DEBUG ]  block==null waiting for ack for: -1
+2022-07-27 13:40:50  [ IPC Parameter Sending Thread #0:3428 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #5 org.apache.hadoop.hdfs.protocol.ClientProtocol.complete
+2022-07-27 13:40:50  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3444 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #5
+2022-07-27 13:40:50  [ shutdown-hook-0:3444 ] - [ DEBUG ]  Call: complete took 16ms
+2022-07-27 13:40:50  [ shutdown-hook-0:3449 ] - [ DEBUG ]  FileSystem.close() by method: org.apache.hadoop.hdfs.DistributedFileSystem.close(DistributedFileSystem.java:1517)); Key: (root (auth:SIMPLE))@hdfs://192.168.244.100:8020; URI: hdfs://192.168.244.100:8020; Object Identity Hash: 36068cc3
+2022-07-27 13:40:50  [ shutdown-hook-0:3449 ] - [ DEBUG ]  stopping client from cache: Client-2f74f1dd8dce4e798bde3cade136b78d
+2022-07-27 13:40:50  [ shutdown-hook-0:3449 ] - [ DEBUG ]  removing client from cache: Client-2f74f1dd8dce4e798bde3cade136b78d
+2022-07-27 13:40:50  [ shutdown-hook-0:3455 ] - [ DEBUG ]  stopping actual client because no more references remain: Client-2f74f1dd8dce4e798bde3cade136b78d
+2022-07-27 13:40:50  [ shutdown-hook-0:3455 ] - [ DEBUG ]  Stopping client
+2022-07-27 13:40:50  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3455 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root: closed
+2022-07-27 13:40:50  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3455 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root: stopped, remaining connections 0
+2022-07-27 13:40:50  [ Thread-3:3455 ] - [ DEBUG ]  Completed shutdown in 0.038 seconds; Timeouts: 0
+2022-07-27 13:40:50  [ Thread-3:3487 ] - [ DEBUG ]  ShutdownHookManager completed shutdown.
+2022-07-27 20:00:14  [ main:0 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[GetGroups])
+2022-07-27 20:00:14  [ main:15 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of failed kerberos logins and latency (milliseconds)])
+2022-07-27 20:00:14  [ main:20 ] - [ DEBUG ]  field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Rate of successful kerberos logins and latency (milliseconds)])
+2022-07-27 20:00:14  [ main:21 ] - [ DEBUG ]  field private org.apache.hadoop.metrics2.lib.MutableGaugeInt org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailures with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since last successful login])
+2022-07-27 20:00:14  [ main:22 ] - [ DEBUG ]  field private org.apache.hadoop.metrics2.lib.MutableGaugeLong org.apache.hadoop.security.UserGroupInformation$UgiMetrics.renewalFailuresTotal with annotation @org.apache.hadoop.metrics2.annotation.Metric(sampleName=Ops, always=false, valueName=Time, about=, interval=10, type=DEFAULT, value=[Renewal failures since startup])
+2022-07-27 20:00:14  [ main:25 ] - [ DEBUG ]  UgiMetrics, User and group related metrics
+2022-07-27 20:00:14  [ main:45 ] - [ DEBUG ]  Setting hadoop.security.token.service.use_ip to true
+2022-07-27 20:00:15  [ main:67 ] - [ DEBUG ]   Creating new Groups object
+2022-07-27 20:00:15  [ main:71 ] - [ DEBUG ]  Trying to load the custom-built native-hadoop library...
+2022-07-27 20:00:15  [ main:91 ] - [ DEBUG ]  Loaded the native-hadoop library
+2022-07-27 20:00:15  [ main:95 ] - [ DEBUG ]  Using JniBasedUnixGroupsMapping for Group resolution
+2022-07-27 20:00:15  [ main:95 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMapping
+2022-07-27 20:00:15  [ main:241 ] - [ DEBUG ]  Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+2022-07-27 20:00:15  [ main:269 ] - [ DEBUG ]  Hadoop login
+2022-07-27 20:00:15  [ main:273 ] - [ DEBUG ]  hadoop login commit
+2022-07-27 20:00:15  [ main:277 ] - [ DEBUG ]  Using user: "root" with name: root
+2022-07-27 20:00:15  [ main:281 ] - [ DEBUG ]  User entry: "root"
+2022-07-27 20:00:15  [ main:281 ] - [ DEBUG ]  UGI loginUser: root (auth:SIMPLE)
+2022-07-27 20:00:15  [ main:285 ] - [ DEBUG ]  Starting: Acquiring creator semaphore for hdfs://192.168.244.100:8020
+2022-07-27 20:00:15  [ main:285 ] - [ DEBUG ]  Acquiring creator semaphore for hdfs://192.168.244.100:8020: duration 0:00.004s
+2022-07-27 20:00:15  [ main:358 ] - [ DEBUG ]  sampler.classes = ; loaded no samplers
+2022-07-27 20:00:15  [ main:926 ] - [ DEBUG ]  span.receiver.classes = ; loaded no span receivers
+2022-07-27 20:00:15  [ main:930 ] - [ DEBUG ]  Starting: Creating FS hdfs://192.168.244.100:8020
+2022-07-27 20:00:15  [ main:930 ] - [ DEBUG ]  Loading filesystems
+2022-07-27 20:00:15  [ main:963 ] - [ DEBUG ]  file:// = class org.apache.hadoop.fs.LocalFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-common/3.3.1/hadoop-common-3.3.1.jar
+2022-07-27 20:00:15  [ main:971 ] - [ DEBUG ]  viewfs:// = class org.apache.hadoop.fs.viewfs.ViewFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-common/3.3.1/hadoop-common-3.3.1.jar
+2022-07-27 20:00:15  [ main:975 ] - [ DEBUG ]  har:// = class org.apache.hadoop.fs.HarFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-common/3.3.1/hadoop-common-3.3.1.jar
+2022-07-27 20:00:15  [ main:983 ] - [ DEBUG ]  http:// = class org.apache.hadoop.fs.http.HttpFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-common/3.3.1/hadoop-common-3.3.1.jar
+2022-07-27 20:00:15  [ main:983 ] - [ DEBUG ]  https:// = class org.apache.hadoop.fs.http.HttpsFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-common/3.3.1/hadoop-common-3.3.1.jar
+2022-07-27 20:00:15  [ main:1007 ] - [ DEBUG ]  hdfs:// = class org.apache.hadoop.hdfs.DistributedFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-hdfs-client/3.3.1/hadoop-hdfs-client-3.3.1.jar
+2022-07-27 20:00:15  [ main:1035 ] - [ DEBUG ]  webhdfs:// = class org.apache.hadoop.hdfs.web.WebHdfsFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-hdfs-client/3.3.1/hadoop-hdfs-client-3.3.1.jar
+2022-07-27 20:00:15  [ main:1039 ] - [ DEBUG ]  swebhdfs:// = class org.apache.hadoop.hdfs.web.SWebHdfsFileSystem from /C:/Users/86132/.m2/repository/org/apache/hadoop/hadoop-hdfs-client/3.3.1/hadoop-hdfs-client-3.3.1.jar
+2022-07-27 20:00:15  [ main:1039 ] - [ DEBUG ]  Looking for FS supporting hdfs
+2022-07-27 20:00:15  [ main:1039 ] - [ DEBUG ]  looking for configuration option fs.hdfs.impl
+2022-07-27 20:00:16  [ main:1084 ] - [ DEBUG ]  Looking in service filesystems for implementation class
+2022-07-27 20:00:16  [ main:1084 ] - [ DEBUG ]  FS for hdfs is class org.apache.hadoop.hdfs.DistributedFileSystem
+2022-07-27 20:00:16  [ main:1160 ] - [ DEBUG ]  dfs.client.use.legacy.blockreader.local = false
+2022-07-27 20:00:16  [ main:1160 ] - [ DEBUG ]  dfs.client.read.shortcircuit = false
+2022-07-27 20:00:16  [ main:1160 ] - [ DEBUG ]  dfs.client.domain.socket.data.traffic = false
+2022-07-27 20:00:16  [ main:1160 ] - [ DEBUG ]  dfs.domain.socket.path = 
+2022-07-27 20:00:16  [ main:1188 ] - [ DEBUG ]  Sets dfs.client.block.write.replace-datanode-on-failure.min-replication to 0
+2022-07-27 20:00:16  [ main:1205 ] - [ DEBUG ]  multipleLinearRandomRetry = null
+2022-07-27 20:00:16  [ main:1249 ] - [ DEBUG ]  rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine2$RpcProtobufRequest, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine2$Server$ProtoBufRpcInvoker@7219ec67
+2022-07-27 20:00:16  [ main:1954 ] - [ DEBUG ]  getting client out of cache: Client-87dfbf23357240b29951d9a2ccf259d4
+2022-07-27 20:00:17  [ main:2955 ] - [ DEBUG ]  Both short-circuit local reads and UNIX domain socket are disabled.
+2022-07-27 20:00:17  [ main:2971 ] - [ DEBUG ]  DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for dfs.data.transfer.protection
+2022-07-27 20:00:17  [ main:2975 ] - [ DEBUG ]  Creating FS hdfs://192.168.244.100:8020: duration 0:02.045s
+2022-07-27 20:00:17  [ main:2983 ] - [ DEBUG ]  /test/0727: masked={ masked: rwxr-xr-x, unmasked: rwxrwxrwx }
+2022-07-27 20:00:18  [ main:3076 ] - [ DEBUG ]  The ping interval is 60000 ms.
+2022-07-27 20:00:18  [ main:3080 ] - [ DEBUG ]  Connecting to /192.168.244.100:8020
+2022-07-27 20:00:18  [ main:3080 ] - [ DEBUG ]  Setup connection to /192.168.244.100:8020
+2022-07-27 20:00:18  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3120 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root: starting, having connections 1
+2022-07-27 20:00:18  [ IPC Parameter Sending Thread #0:3128 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #0 org.apache.hadoop.hdfs.protocol.ClientProtocol.mkdirs
+2022-07-27 20:00:18  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3327 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #0
+2022-07-27 20:00:18  [ main:3327 ] - [ DEBUG ]  Call: mkdirs took 304ms
+2022-07-27 20:00:18  [ IPC Parameter Sending Thread #0:3335 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #1 org.apache.hadoop.hdfs.protocol.ClientProtocol.getFileInfo
+2022-07-27 20:00:18  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3343 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #1
+2022-07-27 20:00:18  [ main:3343 ] - [ DEBUG ]  Call: getFileInfo took 8ms
+2022-07-27 20:00:18  [ main:3351 ] - [ DEBUG ]  /test/0727/1.txt: masked={ masked: rw-r--r--, unmasked: rw-rw-rw- }
+2022-07-27 20:00:18  [ IPC Parameter Sending Thread #0:3420 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #2 org.apache.hadoop.hdfs.protocol.ClientProtocol.create
+2022-07-27 20:00:18  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3501 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #2
+2022-07-27 20:00:18  [ main:3505 ] - [ DEBUG ]  Call: create took 85ms
+2022-07-27 20:00:18  [ main:3537 ] - [ DEBUG ]  computePacketChunkSize: src=/test/0727/1.txt, chunkSize=516, chunksPerPacket=126, packetSize=65016
+2022-07-27 20:00:18  [ LeaseRenewer:root@192.168.244.100:8020:3549 ] - [ DEBUG ]  Lease renewer daemon for [DFSClient_NONMAPREDUCE_1255821456_1] with renew id 1 started
+2022-07-27 20:00:18  [ main:3549 ] - [ DEBUG ]  Starting: Acquiring creator semaphore for file:///
+2022-07-27 20:00:18  [ main:3549 ] - [ DEBUG ]  Acquiring creator semaphore for file:///: duration 0:00.000s
+2022-07-27 20:00:18  [ main:3549 ] - [ DEBUG ]  Starting: Creating FS file:///
+2022-07-27 20:00:18  [ main:3553 ] - [ DEBUG ]  Looking for FS supporting file
+2022-07-27 20:00:18  [ main:3553 ] - [ DEBUG ]  looking for configuration option fs.file.impl
+2022-07-27 20:00:18  [ main:3553 ] - [ DEBUG ]  Looking in service filesystems for implementation class
+2022-07-27 20:00:18  [ main:3553 ] - [ DEBUG ]  FS for file is class org.apache.hadoop.fs.LocalFileSystem
+2022-07-27 20:00:18  [ main:3553 ] - [ DEBUG ]  Creating FS file:///: duration 0:00.004s
+2022-07-27 20:00:18  [ IPC Parameter Sending Thread #0:3577 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #3 org.apache.hadoop.hdfs.protocol.ClientProtocol.getFileInfo
+2022-07-27 20:00:18  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3581 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #3
+2022-07-27 20:00:18  [ main:3581 ] - [ DEBUG ]  Call: getFileInfo took 4ms
+2022-07-27 20:00:18  [ IPC Parameter Sending Thread #0:3585 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #4 org.apache.hadoop.hdfs.protocol.ClientProtocol.getFileInfo
+2022-07-27 20:00:18  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3589 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #4
+2022-07-27 20:00:18  [ main:3589 ] - [ DEBUG ]  Call: getFileInfo took 4ms
+2022-07-27 20:00:18  [ main:3622 ] - [ DEBUG ]  /test/0727/0715.txt: masked={ masked: rw-r--r--, unmasked: rw-rw-rw- }
+2022-07-27 20:00:18  [ IPC Parameter Sending Thread #0:3622 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #5 org.apache.hadoop.hdfs.protocol.ClientProtocol.create
+2022-07-27 20:00:18  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3630 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #5
+2022-07-27 20:00:18  [ main:3630 ] - [ DEBUG ]  Call: create took 8ms
+2022-07-27 20:00:18  [ main:3630 ] - [ DEBUG ]  computePacketChunkSize: src=/test/0727/0715.txt, chunkSize=516, chunksPerPacket=126, packetSize=65016
+2022-07-27 20:00:18  [ main:3638 ] - [ DEBUG ]  WriteChunk allocating new packet seqno=0, src=/test/0727/0715.txt, packetSize=65016, chunksPerPacket=126, bytesCurBlock=0, DFSOutputStream:block==null
+2022-07-27 20:00:18  [ main:3638 ] - [ DEBUG ]  Queued packet seqno: 0 offsetInBlock: 0 lastPacketInBlock: false lastByteOffsetInBlock: 11816, block==null
+2022-07-27 20:00:18  [ main:3642 ] - [ DEBUG ]  Queued packet seqno: 1 offsetInBlock: 11816 lastPacketInBlock: true lastByteOffsetInBlock: 11816, block==null
+2022-07-27 20:00:18  [ Thread-7:3642 ] - [ DEBUG ]  stage=PIPELINE_SETUP_CREATE, block==null
+2022-07-27 20:00:18  [ main:3642 ] - [ DEBUG ]  block==null waiting for ack for: 1
+2022-07-27 20:00:18  [ Thread-7:3642 ] - [ DEBUG ]  Allocating new block: block==null
+2022-07-27 20:00:18  [ IPC Parameter Sending Thread #0:3682 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #6 org.apache.hadoop.hdfs.protocol.ClientProtocol.addBlock
+2022-07-27 20:00:18  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3795 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #6
+2022-07-27 20:00:18  [ Thread-7:3795 ] - [ DEBUG ]  Call: addBlock took 113ms
+2022-07-27 20:00:18  [ Thread-7:3924 ] - [ DEBUG ]  pipeline = [DatanodeInfoWithStorage[192.168.244.100:9866,DS-79e9cd48-68c8-40d1-9adf-a66e6174e192,DISK], DatanodeInfoWithStorage[192.168.244.102:9866,DS-c87c76ea-f8b2-4437-acba-5f23b9053568,DISK], DatanodeInfoWithStorage[192.168.244.101:9866,DS-08d9fcda-e8c9-45de-8f19-62952ac1bc74,DISK]], blk_1073741825_1001
+2022-07-27 20:00:18  [ Thread-7:3924 ] - [ DEBUG ]  Connecting to datanode master:9866
+2022-07-27 20:00:18  [ Thread-7:3948 ] - [ DEBUG ]  Send buf size 65536
+2022-07-27 20:00:18  [ Thread-7:3948 ] - [ DEBUG ]  SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2022-07-27 20:00:18  [ IPC Parameter Sending Thread #0:3948 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #7 org.apache.hadoop.hdfs.protocol.ClientProtocol.getServerDefaults
+2022-07-27 20:00:18  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:3973 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #7
+2022-07-27 20:00:18  [ Thread-7:3973 ] - [ DEBUG ]  Call: getServerDefaults took 25ms
+2022-07-27 20:00:18  [ Thread-7:3985 ] - [ DEBUG ]  SASL client skipping handshake in unsecured configuration for addr = master/192.168.244.100, datanodeId = DatanodeInfoWithStorage[192.168.244.100:9866,DS-79e9cd48-68c8-40d1-9adf-a66e6174e192,DISK]
+2022-07-27 20:00:20  [ DataStreamer for file /test/0727/0715.txt block BP-446627694-192.168.244.100-1658919669744:blk_1073741825_1001:5434 ] - [ DEBUG ]  nodes [DatanodeInfoWithStorage[192.168.244.100:9866,DS-79e9cd48-68c8-40d1-9adf-a66e6174e192,DISK], DatanodeInfoWithStorage[192.168.244.102:9866,DS-c87c76ea-f8b2-4437-acba-5f23b9053568,DISK], DatanodeInfoWithStorage[192.168.244.101:9866,DS-08d9fcda-e8c9-45de-8f19-62952ac1bc74,DISK]] storageTypes [DISK, DISK, DISK] storageIDs [DS-79e9cd48-68c8-40d1-9adf-a66e6174e192, DS-c87c76ea-f8b2-4437-acba-5f23b9053568, DS-08d9fcda-e8c9-45de-8f19-62952ac1bc74]
+2022-07-27 20:00:20  [ DataStreamer for file /test/0727/0715.txt block BP-446627694-192.168.244.100-1658919669744:blk_1073741825_1001:5438 ] - [ DEBUG ]  blk_1073741825_1001 sending packet seqno: 0 offsetInBlock: 0 lastPacketInBlock: false lastByteOffsetInBlock: 11816
+2022-07-27 20:00:20  [ DataStreamer for file /test/0727/0715.txt block BP-446627694-192.168.244.100-1658919669744:blk_1073741825_1001:5440 ] - [ DEBUG ]  stage=DATA_STREAMING, blk_1073741825_1001
+2022-07-27 20:00:20  [ ResponseProcessor for block BP-446627694-192.168.244.100-1658919669744:blk_1073741825_1001:5802 ] - [ DEBUG ]  DFSClient seqno: 0 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 161697395 flag: 0 flag: 0 flag: 0
+2022-07-27 20:00:20  [ DataStreamer for file /test/0727/0715.txt block BP-446627694-192.168.244.100-1658919669744:blk_1073741825_1001:5805 ] - [ DEBUG ]  blk_1073741825_1001 sending packet seqno: 1 offsetInBlock: 11816 lastPacketInBlock: true lastByteOffsetInBlock: 11816
+2022-07-27 20:00:20  [ ResponseProcessor for block BP-446627694-192.168.244.100-1658919669744:blk_1073741825_1001:5846 ] - [ DEBUG ]  DFSClient seqno: 1 reply: SUCCESS reply: SUCCESS reply: SUCCESS downstreamAckTimeNanos: 25425052 flag: 0 flag: 0 flag: 0
+2022-07-27 20:00:20  [ DataStreamer for file /test/0727/0715.txt block BP-446627694-192.168.244.100-1658919669744:blk_1073741825_1001:5846 ] - [ DEBUG ]  Closing old block BP-446627694-192.168.244.100-1658919669744:blk_1073741825_1001
+2022-07-27 20:00:20  [ IPC Parameter Sending Thread #0:5851 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #8 org.apache.hadoop.hdfs.protocol.ClientProtocol.complete
+2022-07-27 20:00:20  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:5922 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #8
+2022-07-27 20:00:20  [ main:5924 ] - [ DEBUG ]  Call: complete took 73ms
+2022-07-27 20:00:21  [ IPC Parameter Sending Thread #0:6343 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #9 org.apache.hadoop.hdfs.protocol.ClientProtocol.complete
+2022-07-27 20:00:21  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:6347 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #9
+2022-07-27 20:00:21  [ main:6348 ] - [ DEBUG ]  Call: complete took 6ms
+2022-07-27 20:00:21  [ shutdown-hook-0:6353 ] - [ DEBUG ]  FileSystem.close() by method: org.apache.hadoop.fs.FilterFileSystem.close(FilterFileSystem.java:529)); Key: (root (auth:SIMPLE))@file://; URI: file:///; Object Identity Hash: 539b941e
+2022-07-27 20:00:21  [ shutdown-hook-0:6355 ] - [ DEBUG ]  FileSystem.close() by method: org.apache.hadoop.fs.RawLocalFileSystem.close(RawLocalFileSystem.java:759)); Key: null; URI: file:///; Object Identity Hash: 5d5c701d
+2022-07-27 20:00:21  [ shutdown-hook-0:6356 ] - [ DEBUG ]  block==null waiting for ack for: -1
+2022-07-27 20:00:21  [ IPC Parameter Sending Thread #0:6357 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root sending #10 org.apache.hadoop.hdfs.protocol.ClientProtocol.complete
+2022-07-27 20:00:21  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:6360 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root got value #10
+2022-07-27 20:00:21  [ shutdown-hook-0:6360 ] - [ DEBUG ]  Call: complete took 4ms
+2022-07-27 20:00:21  [ shutdown-hook-0:6363 ] - [ DEBUG ]  FileSystem.close() by method: org.apache.hadoop.hdfs.DistributedFileSystem.close(DistributedFileSystem.java:1517)); Key: (root (auth:SIMPLE))@hdfs://192.168.244.100:8020; URI: hdfs://192.168.244.100:8020; Object Identity Hash: 5963ff6e
+2022-07-27 20:00:21  [ shutdown-hook-0:6364 ] - [ DEBUG ]  stopping client from cache: Client-87dfbf23357240b29951d9a2ccf259d4
+2022-07-27 20:00:21  [ shutdown-hook-0:6366 ] - [ DEBUG ]  removing client from cache: Client-87dfbf23357240b29951d9a2ccf259d4
+2022-07-27 20:00:21  [ shutdown-hook-0:6368 ] - [ DEBUG ]  stopping actual client because no more references remain: Client-87dfbf23357240b29951d9a2ccf259d4
+2022-07-27 20:00:21  [ shutdown-hook-0:6368 ] - [ DEBUG ]  Stopping client
+2022-07-27 20:00:21  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:6372 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root: closed
+2022-07-27 20:00:21  [ IPC Client (240166646) connection to /192.168.244.100:8020 from root:6373 ] - [ DEBUG ]  IPC Client (240166646) connection to /192.168.244.100:8020 from root: stopped, remaining connections 0
+2022-07-27 20:00:21  [ Thread-3:6376 ] - [ DEBUG ]  Completed shutdown in 0.024 seconds; Timeouts: 0
+2022-07-27 20:00:21  [ Thread-3:6413 ] - [ DEBUG ]  ShutdownHookManager completed shutdown.
